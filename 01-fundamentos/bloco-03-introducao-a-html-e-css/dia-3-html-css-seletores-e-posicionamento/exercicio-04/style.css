@@ -1,0 +1,59 @@
+ol {
+    background-color: yellow;
+}
+
+.par {
+    color: green;
+}
+
+.impar {
+    text-transform: uppercase;
+}
+
+h1, h3 {
+    color: red;
+}
+h1 em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: 600;
+}
+
+ul li:nth-child(-n+3) {
+    color: blue;
+}
+
+#java {
+    background-color: pink;
+}
+
+a:hover {
+    font-weight: 600;
+}
+
+#s-o:hover {
+    color: hsl(27,90%,55%);
+}
+
+#w3s:hover {
+    color: #04AA6D;;
+}
+
+#mdn:hover {
+    color: #1b1b1b;
+}
+
+#dev-docs:hover {
+    color: rgb(190, 190, 22);
+}
+
+#trybe:hover {
+    color: #32a791;
+}
