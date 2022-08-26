@@ -61,6 +61,12 @@
        document.getElementsByClassName("center-content")[0].style.backgroundColor = "white";
 
        document.getElementsByTagName("h1")[0].innerText = "Exercício 5.1 - JavaScript";
+
+       let textos = document.getElementsByTagName("p");
+
+       for (texto of textos) {
+           texto.style.textTransform = "uppercase";
+       }
     </script>
   </body>
 </html>
