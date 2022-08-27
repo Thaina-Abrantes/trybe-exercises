@@ -50,27 +50,27 @@
     - document.getElementById()
     - document.getElementsByClassName()
     - document.getElementsByTagName()
-    1. Crie e execute uma função que mude o texto na tag `<p>-----</p>`, para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
-    2. Crie e execute uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
-    3. Crie e execute uma função que mude a cor do quadrado vermelho para branco.
-    4. Crie e execute uma função que corrija o texto da tag <h1>.
-    5. Crie e execute uma função que modifique todo o texto da tag <p> para maiúsculo.
-    6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
     */
+    //1. Crie e execute uma função que mude o texto na tag `<p>-----</p>`, para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
     document.getElementsByTagName("p")[1].innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
 
+    //2. Crie e execute uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
     document.getElementsByClassName("main-content")[0].style.backgroundColor = "rgb(76,164,109)";
 
+    //3. Crie e execute uma função que mude a cor do quadrado vermelho para branco.
     document.getElementsByClassName("center-content")[0].style.backgroundColor = "white";
 
+    //4. Crie e execute uma função que corrija o texto da tag <h1>.
     document.getElementsByTagName("h1")[0].innerText = "Exercício 5.1 - JavaScript";
 
+    //5. Crie e execute uma função que modifique todo o texto da tag <p> para maiúsculo.
     let textos = document.getElementsByTagName("p");
 
     for (texto of textos) {
       texto.style.textTransform = "uppercase";
     }
 
+    //6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
     let tagsP = document.getElementsByTagName("p");
     function showTagsP(tags) {
       for (let index = 0; index < tags.length; index += 1) {
@@ -78,7 +78,7 @@
       }
     }
     showTagsP(tagsP);
-    
+
   </script>
 </body>
 
