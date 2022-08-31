@@ -38,3 +38,13 @@ primeiroFilhoDoFilho.appendChild(primeiroBisnetoDoPai);
 
 //A partir desse filho criado, acesse terceiroFilho.
 primeiroBisnetoDoPai.parentNode.parentNode.nextElementSibling;
+
+//Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
+element.removeChild(document.getElementById('segundoEUltimoFilhoDoFilho'));
+element.removeChild(terceiroFilhoDoFilho);
+primeiroFilhoDoFilho.removeChild(primeiroBisnetoDoPai);
+let pai = document.getElementById('pai');
+pai.removeChild(primeiroFilho);
+pai.removeChild(outroFilho);
+pai.removeChild(terceiroFilho);
+pai.removeChild(quartoEUltimoFilho);
