@@ -10,3 +10,10 @@ function calculateFactorial(number) {
     return factorial;
 }
 console.log(calculateFactorial(10));
+
+//2- Agora, desenvolva um algoritmo que é capaz de inverter uma palavra. Por exemplo, a palavra "banana" seria invertida para "ananab".
+
+function reverseString(str) {
+    const modifiedString = str.split('').reverse().join('');
+    return modifiedString;
+}
