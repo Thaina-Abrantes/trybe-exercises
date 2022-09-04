@@ -37,3 +37,20 @@ for (let index = 0; index < skills.length; index += 1) {
     }
 }
 console.log(biggest);
+
+//4- Um número primo é um número inteiro maior do que 1 que possui somente dois divisores, ou seja, é divisível por 1 e por ele mesmo. 
+//Sabendo disso, escreva um algoritmo que retorne o maior número primo entre 2 e 50.
+
+let biggestPrimeNumber = 0;
+for (let num = 2; num <= 50; num += 1) {
+    let isPrime = true;
+    for (let divider = 2; divider < num; divider += 1) {
+        if (num % divider === 0) {
+            isPrime = false;
+        }
+    }
+    if (isPrime) {
+        biggestPrimeNumber = num;
+    }
+}
+console.log(biggestPrimeNumber);
