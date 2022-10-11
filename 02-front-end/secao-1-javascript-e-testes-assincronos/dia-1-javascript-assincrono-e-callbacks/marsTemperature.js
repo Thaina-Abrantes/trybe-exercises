@@ -5,10 +5,17 @@ const getMarsTemperature = () => {
     return Math.floor(Math.random() * maxTemperature);
 };
 
-const sendMarsTemperature = () => {
-    const temperaturaAtual = getMarsTemperature();
-    console.log(`A temperatura de Marte é: ${temperaturaAtual} graus celsius`);
-}
+const toFahrenheit = (degreeCelsius) => (degreeCelsius * (9 / 5)).toFixed(1) + 32;
 
-// Imprime "A temperatura de Marte é: 20 graus celsius", por exemplo
-setTimeout(() => sendMarsTemperature(), messageDelay());
+const temperatureInFahrenheit = (temperature) =>
+  console.log(`Atualmente está ${toFahrenheit(temperature)}ºF em Marte`);
+
+const greet = (temperature) =>
+  console.log(`Olá! Curiosity aqui. Nesse momento está ${temperature}ºC em Marte`);
+
+const sendMarsTemperature = (callback) => callback;
+const temperature = getMarsTemperature();
+const delay = messageDelay();
+
+setTimeout(() => sendMarsTemperature(temperatureInFahrenheit(temperature)), delay);
+setTimeout(() => sendMarsTemperature(greet(temperature)), delay);
