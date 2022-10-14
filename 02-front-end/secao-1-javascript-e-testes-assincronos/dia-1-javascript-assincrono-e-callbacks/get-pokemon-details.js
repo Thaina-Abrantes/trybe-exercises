@@ -16,9 +16,6 @@ const pokemons = [
   },
 ];
 
-/**Ao chamar a função getPokemonDetails com um pokémon existente, imprime no console a mensagem com os detalhes deste pokémon.
-Ao chamar a função getPokemonDetails com um pokémon não existente, imprime no console o erro. */
-
 function getPokemonDetails(selectedPokemon, callback) {
   const foundPokemon = pokemons.find((pokemon) => pokemon.name === selectedPokemon);
 
@@ -40,4 +37,4 @@ const handlePokemonSearch = (error, message) => {
   if (message === null) console.log(error.message);
 };
 
-getPokemonDetails('Squirtle', handlePokemonSearch);
+module.exports = getPokemonDetails;
